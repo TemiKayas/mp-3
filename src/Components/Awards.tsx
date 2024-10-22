@@ -7,7 +7,7 @@ export default function Awards() {
             <SmallDiv>
                 <h3>Antonis Fragoudakis Memorial Award 2024</h3>
 
-                <img src="/public/award.jpg" alt="Image of me getting my award!"/>
+                <img src="../../public/award.jpg" alt="Image of me getting my award!"/>
 
                 <p>This award was given to me during my time as a research assistant, I worked on a team figuring
                     out how we could best integrate AI to help teach Modern Greek. I worked with Professor
@@ -15,7 +15,7 @@ export default function Awards() {
             </SmallDiv>
             <SmallDiv>
                 <h3>Google IT certification.</h3>
-                <img src="/public/googlecert.webp" alt="Google IT certification"/>
+                <img src="../../public/googlecert.webp" alt="Google IT certification"/>
 
                 <p> I received this certification back in my senior year of high school. There was a program
                     to give students an oppurunity to earn this certificate and I was more than happy to take
