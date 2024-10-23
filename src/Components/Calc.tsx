@@ -51,9 +51,9 @@ const ClearButton = styled(Button)`
     }
 `;
 
-const Result = styled.h3`
+const Result = styled.h3<{ isNegative: boolean }>`
     font-size: calc(4px + 2vw);
-    color: black;
+    color: ${(props) => (props.isNegative ? 'red' : 'black')};
     margin-top: 3%;
 `;
 
@@ -108,6 +108,8 @@ export default function Calc() {
         dispatch({ type: "clear" });
     };
 
+    const isNegative = typeof state.result === "number" && state.result < 0;
+
     return (
         <>
             <Input
@@ -130,7 +132,7 @@ export default function Calc() {
                 <Button onClick={() => dispatch({ type: "power", first, second })}>Power</Button>
                 <ClearButton onClick={handleClear}>Clear</ClearButton>
             </ButtonContainer>
-            <Result>{state.result}</Result>
+            <Result isNegative={isNegative}>{state.result}</Result>
         </>
     );
 }
