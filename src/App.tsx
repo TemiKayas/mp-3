@@ -11,6 +11,7 @@ import Work from "./Components/Work.tsx";
 import Header from "./Components/Header.tsx";
 import Footer from "./Components/Footer.tsx";
 import Credits from "./Components/Credits.tsx";
+import Calc from "./Components/Calc.tsx";
 
 const Wrapper = styled.div`
     display: flex;
@@ -44,6 +45,8 @@ function Root() {
                     <Route path={'/projects'} element={<Projects/>}/>
                     <Route path={'/work'} element={<Work/>}/>
                     <Route path={'/credits'} element={<Credits/>}/>
+                    <Route path={'/calc'} element={<Calc/>}/>
+
                 </Routes>
             </Container>
             <Footer/>
